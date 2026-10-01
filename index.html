@@ -3,19 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>ZERO LIMITS Esports</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
   background:#080808;
-  color:white;
+  color:#fff;
   font-family:Arial,sans-serif;
 }
 
@@ -26,47 +21,30 @@ header{
 }
 
 .logo{
+  color:#ffd400;
   font-size:28px;
   font-weight:900;
-  color:#ffd400;
 }
 
 .hero{
   text-align:center;
-  padding:45px 20px 30px;
+  padding:35px 15px;
 }
 
 .hero h1{
-  font-size:42px;
+  font-size:40px;
   font-weight:900;
 }
 
 .hero p{
-  margin-top:10px;
   color:#aaa;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:15px 25px;
-  background:#ffd400;
-  color:#000;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:8px;
+  margin-top:8px;
 }
 
 .section{
-  max-width:900px;
+  max-width:700px;
   margin:auto;
-  padding:25px 15px 50px;
-}
-
-.banner{
-  width:100%;
-  border-radius:15px;
-  margin-bottom:25px;
+  padding:20px 15px 50px;
 }
 
 .title{
@@ -76,23 +54,56 @@ header{
   margin-bottom:20px;
 }
 
-.match{
+.form-box,
+.match-box{
   background:#151515;
   border:1px solid #333;
   border-radius:15px;
-  padding:25px;
+  padding:22px;
+  margin-bottom:30px;
+}
+
+label{
+  display:block;
+  margin:15px 0 7px;
+  font-weight:bold;
+}
+
+input{
+  width:100%;
+  padding:14px;
+  border-radius:8px;
+  border:1px solid #444;
+  background:#090909;
+  color:white;
+  font-size:16px;
+}
+
+.btn{
+  width:100%;
+  margin-top:22px;
+  padding:15px;
+  border:0;
+  border-radius:8px;
+  background:#ffd400;
+  color:#000;
+  font-size:17px;
+  font-weight:bold;
+}
+
+.match-box{
   text-align:center;
 }
 
-.match h3{
-  font-size:28px;
+.match-box h3{
   color:#ffd400;
+  font-size:28px;
   margin-bottom:15px;
 }
 
-.match p{
+.match-box p{
+  margin:8px;
   color:#ddd;
-  margin:8px 0;
 }
 
 footer{
@@ -113,24 +124,49 @@ footer{
 <section class="hero">
   <h1>FREE FIRE</h1>
   <p>BATTLE ROYALE LEAGUE</p>
-
-  <a class="btn"
-     href="https://forms.gle/3jEHNCzgZAv9nrVUA">
-     REGISTER YOUR SQUAD
-  </a>
 </section>
 
 <section class="section">
 
-  <img src="match-banner.png"
-       alt="ZERO LIMITS Match Schedule"
-       class="banner">
+  <h2 class="title">REGISTER YOUR SQUAD</h2>
+
+  <div class="form-box">
+
+    <form onsubmit="registerSquad(event)">
+
+      <label>Squad Name</label>
+      <input id="squad" required placeholder="Enter Squad Name">
+
+      <label>Leader Name</label>
+      <input id="leader" required placeholder="Enter Leader Name">
+
+      <label>Player 1 UID</label>
+      <input id="uid1" required placeholder="Enter Player 1 UID">
+
+      <label>Player 2 UID</label>
+      <input id="uid2" required placeholder="Enter Player 2 UID">
+
+      <label>Player 3 UID</label>
+      <input id="uid3" required placeholder="Enter Player 3 UID">
+
+      <label>Player 4 UID</label>
+      <input id="uid4" required placeholder="Enter Player 4 UID">
+
+      <label>WhatsApp Number</label>
+      <input id="phone" type="tel" required placeholder="Enter WhatsApp Number">
+
+      <button class="btn" type="submit">
+        REGISTER SQUAD
+      </button>
+
+    </form>
+
+  </div>
 
   <h2 class="title">MATCH SCHEDULE</h2>
 
-  <div class="match">
+  <div class="match-box">
     <h3>MATCH 1</h3>
-
     <p><strong>Game:</strong> Free Fire</p>
     <p><strong>Date:</strong> Coming Soon</p>
     <p><strong>Time:</strong> Coming Soon</p>
@@ -142,6 +178,35 @@ footer{
 <footer>
   © 2026 ZERO LIMITS Esports
 </footer>
+
+<script>
+function registerSquad(e){
+  e.preventDefault();
+
+  const squad=document.getElementById("squad").value.trim();
+  const leader=document.getElementById("leader").value.trim();
+  const uid1=document.getElementById("uid1").value.trim();
+  const uid2=document.getElementById("uid2").value.trim();
+  const uid3=document.getElementById("uid3").value.trim();
+  const uid4=document.getElementById("uid4").value.trim();
+  const phone=document.getElementById("phone").value.trim();
+
+  const msg =
+    "ZERO LIMITS ESPORTS - SQUAD REGISTRATION%0A%0A" +
+    "Squad Name: " + encodeURIComponent(squad) + "%0A" +
+    "Leader Name: " + encodeURIComponent(leader) + "%0A" +
+    "Player 1 UID: " + encodeURIComponent(uid1) + "%0A" +
+    "Player 2 UID: " + encodeURIComponent(uid2) + "%0A" +
+    "Player 3 UID: " + encodeURIComponent(uid3) + "%0A" +
+    "Player 4 UID: " + encodeURIComponent(uid4) + "%0A" +
+    "WhatsApp: " + encodeURIComponent(phone);
+
+  window.open(
+    "https://wa.me/917609006989?text=" + msg,
+    "_blank"
+  );
+}
+</script>
 
 </body>
 </html>
