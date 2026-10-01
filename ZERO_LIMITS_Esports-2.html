@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZERO LIMITS Esports — Free Fire League</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#08090d;color:#f4f4f5;font-family:Rajdhani,Arial,sans-serif;font-size:18px}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 10%,rgba(255,52,0,.12),transparent 30%),radial-gradient(circle at 10% 70%,rgba(255,150,0,.07),transparent 25%)}a{text-decoration:none;color:inherit}.topbar{height:74px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;background:#0b0c11cc;border-bottom:1px solid #252731;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.brand{display:flex;gap:10px;align-items:center}.brand strong,.brand small{display:block;font-family:Orbitron}.brand strong{font-size:15px;letter-spacing:1px}.brand small{font-size:10px;color:#ff6a00;letter-spacing:3px}.mark{display:grid;place-items:center;width:40px;height:40px;background:linear-gradient(135deg,#ff4d00,#ffb000);clip-path:polygon(12% 0,100% 0,86% 100%,0 100%);font:900 15px Orbitron;color:#090a0e}nav{display:flex;gap:28px;font-weight:700}nav a:hover{color:#ff7800}.btn{display:inline-block;border:0;padding:14px 22px;background:linear-gradient(90deg,#ff4b00,#ff9d00);color:#08090d;font:800 13px Orbitron;letter-spacing:.5px;cursor:pointer;clip-path:polygon(7px 0,100% 0,calc(100% - 7px) 100%,0 100%)}.btn.small{padding:10px 15px}.btn.ghost{background:transparent;color:#fff;border:1px solid #555;clip-path:none}.hero{min-height:650px;padding:90px 8%;display:flex;align-items:center;justify-content:space-between;gap:60px;background:linear-gradient(110deg,rgba(10,10,14,.98),rgba(12,10,11,.65)),url('');position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:600px;height:600px;right:-180px;top:20px;border:1px solid #ff5b0026;border-radius:50%;box-shadow:0 0 100px #ff4d0012}.hero-copy{max-width:700px;z-index:1}.eyebrow{color:#ff7200;font:700 12px Orbitron;letter-spacing:2px}.hero h1{font:900 clamp(48px,8vw,92px)/.95 Orbitron;margin:16px 0}.hero h1 span{color:#ff6500}.hero p{font-size:22px;color:#aaa}.actions{display:flex;gap:14px;margin:30px 0}.stats{display:flex;gap:45px;margin-top:50px}.stats b,.stats span{display:block}.stats b{font:800 27px Orbitron}.stats span{font-size:11px;color:#888;letter-spacing:2px}.hero-card{width:330px;padding:35px;background:#111218;border:1px solid #2c2d35;box-shadow:0 25px 70px #000;z-index:1;text-align:center;transform:rotate(2deg)}.fire{font-size:70px}.live{color:#ff5a00;font:700 11px Orbitron}.hero-card h3{font:800 28px Orbitron;margin:12px}.hero-card p{font-size:13px;color:#777}.countdown{display:flex;justify-content:center;gap:12px;align-items:center}.countdown span{font:800 30px Orbitron}.countdown small{display:block;font:600 9px Rajdhani;color:#777}.countdown i{color:#ff5a00}.section{padding:80px 8%}.section.alt{background:#0d0e13;border-block:1px solid #202129}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}.section h2{font:800 34px Orbitron;margin:8px 0}.badge{border:1px solid #333;padding:8px 12px;font:700 10px Orbitron;color:#aaa}.match-grid,.team-grid,.prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.match{padding:25px;background:#111218;border:1px solid #272933}.match-top{display:flex;justify-content:space-between;color:#ff7200;font:700 11px Orbitron}.match h3{font:700 20px Orbitron}.match p{color:#888}.match button{background:none;border:1px solid #444;color:#ddd;padding:9px 13px;cursor:pointer;font:700 11px Orbitron}.table-wrap{overflow:auto;border:1px solid #292b34}table{width:100%;border-collapse:collapse;min-width:700px}th,td{padding:16px 20px;text-align:left;border-bottom:1px solid #252630}th{font:700 10px Orbitron;color:#777;background:#111218}td{font-weight:600}td:last-child{color:#ff7200;font:800 16px Orbitron}.team-grid{grid-template-columns:repeat(4,1fr)}.team{padding:25px;background:#111218;border:1px solid #282a32;text-align:center}.team>span{display:block;text-align:right;color:#555;font:700 11px Orbitron}.team-logo{margin:10px auto;width:75px;height:75px;display:grid;place-items:center;background:linear-gradient(135deg,#292b34,#171820);font:900 22px Orbitron;clip-path:polygon(50% 0,100% 25%,88% 100%,12% 100%,0 25%)}.team h3{font:800 16px Orbitron}.team p{color:#ff7200}.prizes>div{background:#111218;border:1px solid #292b34;padding:35px;text-align:center}.prizes span,.prizes b,.prizes small{display:block}.prizes span{font-size:40px}.prizes b{font:800 27px Orbitron;margin:15px}.prizes small{color:#888;letter-spacing:2px}.register{display:grid;grid-template-columns:1fr 1fr;gap:60px}.register p{color:#888;max-width:500px}.register form{display:grid;gap:12px}.register input{padding:16px;background:#111218;border:1px solid #333;color:#fff;font:600 16px Rajdhani}.register .btn{width:100%}footer{padding:35px 8%;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #24252d;color:#777;font-size:14px}
+@media(max-width:800px){nav{display:none}.hero{padding:65px 6%;display:block}.hero-card{margin:50px auto 0;width:min(330px,100%)}.stats{gap:20px}.match-grid,.team-grid,.prizes{grid-template-columns:1fr}.register{grid-template-columns:1fr;gap:25px}.section{padding:60px 6%}.topbar{padding:0 6%}.topbar>.btn{display:none}footer{display:block}.hero h1{font-size:48px}}
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="mark">ZL</span><div><strong>ZERO LIMITS</strong><small>ESPORTS</small></div></div>
+  <nav>
+    <a href="#home">Home</a><a href="#matches">Matches</a><a href="#standings">Standings</a>
+    <a href="#teams">Teams</a><a href="#prizes">Prizes</a>
+  </nav>
+  <a class="btn small" href="#register">Register</a>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">FREE FIRE • BATTLE ROYALE LEAGUE</span>
+    <h1>ZERO LIMITS<br><span>ESPORTS</span></h1>
+    <p>Where squads compete. Where legends rise.</p>
+    <div class="actions"><a class="btn" href="#register">REGISTER YOUR SQUAD</a><a class="btn ghost" href="#standings">VIEW LEADERBOARD</a></div>
+    <div class="stats">
+      <div><b>24</b><span>TEAMS</span></div><div><b>06</b><span>MATCHES</span></div><div><b>₹1K</b><span>PRIZE POOL</span></div>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="fire">🔥</div>
+    <div class="live">● LIVE LEAGUE</div>
+    <h3>SEASON 01</h3>
+    <p>THE BATTLE STARTS SOON</p>
+    <div class="countdown"><span>07<small>DAYS</small></span><i>:</i><span>12<small>HRS</small></span><i>:</i><span>34<small>MIN</small></span></div>
+  </div>
+</section>
+
+<section id="matches" class="section">
+  <div class="section-head"><div><span class="eyebrow">UPCOMING</span><h2>Match Schedule</h2></div><span class="badge">SEASON 01</span></div>
+  <div class="match-grid">
+    <article class="match"><div class="match-top"><b>MATCH 01</b><span>06 OCT • 8:00 PM</span></div><h3>Group Stage — Round 1</h3><p>Map: Bermuda • 12 Teams</p><button onclick="alert('Room ID will be published before the match.')">ROOM DETAILS</button></article>
+    <article class="match"><div class="match-top"><b>MATCH 02</b><span>08 OCT • 8:00 PM</span></div><h3>Group Stage — Round 2</h3><p>Map: Purgatory • 12 Teams</p><button onclick="alert('Room ID will be published before the match.')">ROOM DETAILS</button></article>
+    <article class="match"><div class="match-top"><b>MATCH 03</b><span>10 OCT • 8:00 PM</span></div><h3>Group Stage — Round 3</h3><p>Map: Alpine • 12 Teams</p><button onclick="alert('Room ID will be published before the match.')">ROOM DETAILS</button></article>
+  </div>
+</section>
+
+<section id="standings" class="section alt">
+  <div class="section-head"><div><span class="eyebrow">RANKINGS</span><h2>Points Table</h2></div></div>
+  <div class="table-wrap"><table><thead><tr><th>#</th><th>TEAM</th><th>MATCHES</th><th>KILLS</th><th>PLACEMENT</th><th>TOTAL</th></tr></thead>
+  <tbody id="tableBody"></tbody></table></div>
+</section>
+
+<section id="teams" class="section">
+  <div class="section-head"><div><span class="eyebrow">COMPETITORS</span><h2>Top Squads</h2></div></div>
+  <div class="team-grid">
+    <div class="team"><span>01</span><div class="team-logo">NX</div><h3>NEXT GEN</h3><p>48 Points</p></div>
+    <div class="team"><span>02</span><div class="team-logo">RV</div><h3>RAVEN X</h3><p>45 Points</p></div>
+    <div class="team"><span>03</span><div class="team-logo">PH</div><h3>PHANTOM</h3><p>42 Points</p></div>
+    <div class="team"><span>04</span><div class="team-logo">WD</div><h3>WARRIOR DNA</h3><p>39 Points</p></div>
+  </div>
+</section>
+
+<section id="prizes" class="section alt">
+  <div class="section-head"><div><span class="eyebrow">REWARDS</span><h2>Prize Pool</h2></div></div>
+  <div class="prizes"><div><span>🥇</span><b>₹500</b><small>CHAMPION</small></div><div><span>🥈</span><b>₹300</b><small>RUNNER UP</small></div><div><span>🥉</span><b>₹200</b><small>3RD PLACE</small></div></div>
+</section>
+
+<section id="register" class="section register">
+  <div><span class="eyebrow">JOIN THE BATTLE</span><h2>Register Your Squad</h2><p>Enter your squad details. The tournament admin can connect the form to Google Sheets, a database, or WhatsApp later.</p></div>
+  <form onsubmit="submitForm(event)">
+    <input id="team" required placeholder="Squad / Team Name">
+    <input id="captain" required placeholder="Captain Name">
+    <input id="phone" required type="tel" placeholder="Your WhatsApp Number">
+    <input id="uid" required placeholder="Free Fire UID">
+    <button class="btn" type="submit">REGISTER VIA WHATSAPP</button>
+  </form>
+</section>
+</main>
+
+<footer><div class="brand"><span class="mark">ZL</span><div><strong>ZERO LIMITS</strong><small>ESPORTS</small></div></div><p>© 2026 ZERO LIMITS Esports • Free Fire League</p></footer>
+<script>
+const rows=[
+["01","NEXT GEN","3","29","19","48"],["02","RAVEN X","3","27","18","45"],
+["03","PHANTOM","3","24","18","42"],["04","WARRIOR DNA","3","22","17","39"],
+["05","NOVA SQUAD","3","20","15","35"],["06","DARK KINGS","3","18","14","32"]];
+document.getElementById("tableBody").innerHTML=rows.map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join("")}</tr>`).join("");
+function submitForm(e){
+ e.preventDefault();
+ const team=document.getElementById("team").value.trim();
+ const captain=document.getElementById("captain").value.trim();
+ const phone=document.getElementById("phone").value.trim();
+ const uid=document.getElementById("uid").value.trim();
+ const msg=`ZERO LIMITS Esports - Registration%0A%0ATeam: ${encodeURIComponent(team)}%0ACaptain: ${encodeURIComponent(captain)}%0APlayer WhatsApp: ${encodeURIComponent(phone)}%0AFree Fire UID: ${encodeURIComponent(uid)}%0AEntry/Prize info: ₹1,000 Prize Pool`;
+ window.open(`https://wa.me/917609006989?text=${msg}`,"_blank");
+}
+</script>
+</body>
+</html>
